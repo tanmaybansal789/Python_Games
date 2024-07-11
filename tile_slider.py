@@ -83,8 +83,8 @@ class Tile():
         else:
             stop_scaled_ypos = scaled_ypos + distance * self.size
             for terp_scaled_ypos in inv_quad_xfrange(scaled_ypos, stop_scaled_ypos):
-                self.current_path.append((scaled_xpos, lerp_scaled_ypos))
-            self.current_path.append((scaled_xpos, terp_scaled_ypos))
+                self.current_path.append((scaled_xpos, terp_scaled_ypos))
+            self.current_path.append((scaled_xpos, stop_scaled_ypos))
             self.ypos += distance
         
         self.move_start = time()
