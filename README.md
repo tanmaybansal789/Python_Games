@@ -1,9 +1,10 @@
 # Python_Games
 
 ```ModernGL Voxel Renderer```
+
 A minecraft renderer that uses moderngl, moderngl-window, PyGLM, PIL and Numba.
 
-It is based off of another similar one I saw by 
+It is based off of this one I saw by 
 https://github.com/StanislavPetrovV/Minecraft
 
 You move around with wasdeq, place/remove blocks with m/left click, change block interaction mode with space, and change block placing type with x.
