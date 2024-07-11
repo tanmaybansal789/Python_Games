@@ -11,7 +11,7 @@ You move around with wasdeq, place/remove blocks with m/left click, change block
 
 ```donut.py```
 
-Makes a donut in the terminal. Uses numba no-python just in time compilation.
+Makes a spinny donut in the terminal. Uses numba no-python just in time compilation.
 The original code in JavaScript/C: https://www.a1k0n.net/2011/07/20/donut-math.html
 
 ```snake.py```
