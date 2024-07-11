@@ -75,16 +75,16 @@ class Tile():
 
         if axis == 0:  
             stop_scaled_xpos = scaled_xpos + distance * self.size
-            for lerp_scaled_xpos in inv_quad_xfrange(scaled_xpos, stop_scaled_xpos):
-                self.current_path.append((lerp_scaled_xpos, scaled_ypos))
+            for terp_scaled_xpos in inv_quad_xfrange(scaled_xpos, stop_scaled_xpos):
+                self.current_path.append((terp_scaled_xpos, scaled_ypos))
             self.current_path.append((stop_scaled_xpos, scaled_ypos))
             self.xpos += distance
 
         else:
             stop_scaled_ypos = scaled_ypos + distance * self.size
-            for lerp_scaled_ypos in inv_quad_xfrange(scaled_ypos, stop_scaled_ypos):
+            for terp_scaled_ypos in inv_quad_xfrange(scaled_ypos, stop_scaled_ypos):
                 self.current_path.append((scaled_xpos, lerp_scaled_ypos))
-            self.current_path.append((scaled_xpos, stop_scaled_ypos))
+            self.current_path.append((scaled_xpos, terp_scaled_ypos))
             self.ypos += distance
         
         self.move_start = time()
